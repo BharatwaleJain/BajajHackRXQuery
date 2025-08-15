@@ -16,7 +16,7 @@ Supports multi-format ingestion, hybrid retrieval, caching, resilient LLM orches
 - **Disk Caching**: FAISS indices cached under `faiss_cache/` per document base URL for fast subsequent queries
 - **AI Powered Answering**: Answer questions using Google Gemini 2.5 Flash for contextual responses
 - **LLM Orchestration**: Round-robin across up to 4 Gemini API keys with exponential backoff honoring Retry-After
-- **Auth**: Simple HTTP bearer token guard on protected endpoints
+- **Bearer Authentication**: Simple HTTP bearer token guard on protected endpoints
 - **Observability**: Structured logs to `stdout`
 - **Optional OCR**: Image and PPTX image OCR via Tesseract if valid `TESSERACT_CMD`
 
@@ -50,7 +50,7 @@ AUTH_TOKEN=your_hackrx_bearer_token
 TESSERACT_CMD=your_tesseract_path (optional)
 ```
 
-### 4. Run App locally
+### 4. Run App Locally
 ```bash
 uvicorn app.main:app --reload
 ```
@@ -62,8 +62,7 @@ The server listens by default at `http://localhost:8000` or `http://127.0.0.1:80
 
 #### API Service Status
 ```http
-GET /
-GET /api/v1/
+GET /api/v1
 ```
 
 **Response:**
