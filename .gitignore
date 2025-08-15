@@ -1,3 +1,5 @@
 .env
 __pycache__/
 .vscode/
+faiss_cache/
+qa_log.json

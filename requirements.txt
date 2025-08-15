@@ -4,9 +4,28 @@ pydantic
 httpx
 PyMuPDF
 faiss-cpu
-google-generativeai
-huggingface_hub
-redis
-python-multipart
+# google-generativeai
+# huggingface_hub
+# redis
+# python-multipart
 python-dotenv
 sentence-transformers
+langchain
+langchain-google-genai
+python-docx
+unstructured
+pydantic-settings
+langchain-community
+slowapi
+tiktoken
+numpy
+tenacity
+sentence-transformers
+langchain-huggingface
+gunicorn
+aiohttp
+python-pptx
+openpyxl
+pytesseract
+Pillow
+beautifulsoup4
